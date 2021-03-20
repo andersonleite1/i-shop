@@ -57,3 +57,19 @@ h3,
 h4 {
   font-weight: 500;
 }
+
+/*
+======================
+      Header
+======================
+*/
+.header {
+  position: relative;
+}
+
+.container {
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
