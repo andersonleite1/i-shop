@@ -810,6 +810,8 @@ span.dot::before {
 @media only screen and (max-width: 567px) {
   .title__container {
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
   }
 
   .section__titles:not(:last-child) {
@@ -1009,5 +1011,37 @@ Latest Products Media Query
 
   .product__footer h3 {
     font-size: 1.2rem;
+  }
+}
+
+/*
+======================
+    Category Center
+======================
+*/
+.category__center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem 2rem;
+}
+
+@media only screen and (max-width: 999px) {
+  .category__center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .category__center {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+
+  .category__products .product__header {
+    height: 10rem;
+  }
+
+  .category__products .product__header img {
+    object-fit: contain;
   }
 }
